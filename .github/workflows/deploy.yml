@@ -5,7 +5,11 @@ on:                                                             # trigger
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-    - name: Deploy the code
+    - name: Clone the code
+      uses: actions/checkout@v7
+    - name: Deploy the code via nginx
+      run: cp index.html /var/www/html
+    - name: Deploy the code.
       run: echo "Code deployed to AWS EC2 instance successfully"
