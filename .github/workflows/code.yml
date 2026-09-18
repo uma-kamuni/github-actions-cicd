@@ -3,7 +3,7 @@ name: code
 
 ##when workflow should run
 on:
-  push:
+  workflow_call: 
 
 jobs:
   code-checkout:
