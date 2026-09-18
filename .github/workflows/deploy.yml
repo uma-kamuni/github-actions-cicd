@@ -1,4 +1,4 @@
-name: Deploy
+name: deploy
 
 on:                                                             # trigger
   workflow_call:                                                # when code needs to be called from another function
