@@ -1,4 +1,4 @@
-name: Test
+name: test
 
 ##call another workflow
 on: 
