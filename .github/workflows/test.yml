@@ -1,0 +1,12 @@
+name: Test
+
+##call another workflow
+on: 
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: tset the code
+      run: echo "Code test using pytest or sonarqube"
